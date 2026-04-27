@@ -1,2 +1,2 @@
-# terraform-local-pet-registry
-Example module for housing a pet registry with local files
+# terraform-random-pet-registry
+Example module for creating pets based on pet type
