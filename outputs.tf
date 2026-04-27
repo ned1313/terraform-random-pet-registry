@@ -8,6 +8,7 @@ output "pets" {
       id              = random_id.this[index].hex
       age             = random_integer.age[index].result
       adoption_status = random_shuffle.adoption_status[index].result[0]
+      adoption_cost   = var.adoption_cost
     }
   ]
 }

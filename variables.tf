@@ -17,3 +17,14 @@ variable "quantity" {
     error_message = "The quantity value must be greater than zero."
   }
 }
+
+variable "adoption_cost" {
+  type        = number
+  description = "Optional adoption cost for each generated pet."
+  default     = null
+
+  validation {
+    condition     = var.adoption_cost == null || var.adoption_cost >= 0
+    error_message = "The adoption_cost value must be null or greater than or equal to zero."
+  }
+}
