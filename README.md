@@ -20,14 +20,14 @@ module "dogs" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.12.0 |
-| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.0 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.6.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.5.0 |
+| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.6.0 |
 
 ## Modules
 
@@ -46,6 +46,7 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_adoption_cost"></a> [adoption\_cost](#input\_adoption\_cost) | Optional adoption cost for each generated pet. | `number` | `null` | no |
 | <a name="input_pet_type"></a> [pet\_type](#input\_pet\_type) | The type of pet to register, such as dog, cat, mouse, or iguana. | `string` | n/a | yes |
 | <a name="input_quantity"></a> [quantity](#input\_quantity) | The number of pets to create. | `number` | n/a | yes |
 
